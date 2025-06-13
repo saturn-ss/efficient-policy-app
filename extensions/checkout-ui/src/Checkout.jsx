@@ -12,7 +12,7 @@ import {
 } from "@shopify/ui-extensions-react/checkout";
 
 // 1. Choose an extension target
-export default reactExtension("purchase.checkout.cart-line-list.render-after", () => (
+export default reactExtension("purchase.checkout.block.render", () => (
   <Extension />
 ));
 
