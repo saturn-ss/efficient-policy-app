@@ -3,11 +3,12 @@
 client_id = "10c388bc0035d29efa579e8af3b99286"
 name = "efficient-policy-app"
 handle = "efficient-policy-app-10"
-application_url = "https://example.com/"
+application_url = "https://bosnia-comparable-earlier-publisher.trycloudflare.com"
 embedded = true
 
 [build]
 include_config_on_deploy = true
+automatically_update_urls_on_dev = true
 
 [webhooks]
 api_version = "2025-04"
@@ -25,7 +26,11 @@ api_version = "2025-04"
 scopes = "write_products"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [
+  "https://bosnia-comparable-earlier-publisher.trycloudflare.com/auth/callback",
+  "https://bosnia-comparable-earlier-publisher.trycloudflare.com/auth/shopify/callback",
+  "https://bosnia-comparable-earlier-publisher.trycloudflare.com/api/auth/callback"
+]
 
 [pos]
 embedded = false
